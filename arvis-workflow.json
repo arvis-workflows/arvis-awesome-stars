@@ -1,0 +1,34 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "category": "Productivity",
+  "creator": "jopemachine",
+  "description": "Search someone's starred repository through 'awesome-stars'",
+  "name": "arvis-awesome-stars",
+  "readme": "",
+  "version": "0.0.2",
+  "webAddress": "",
+  "enabled": true,
+  "variables": {
+    "githubUserId": ""
+  },
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "star",
+      "title": "Search someone's starred repository through 'awesome-stars'",
+      "subtitle": "",
+      "scriptFilter": "node index.js '{query}'",
+      "runningSubtext": "",
+      "withspace": true,
+      "argType": "optional",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "open",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}

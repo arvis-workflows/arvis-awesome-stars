@@ -1,0 +1,41 @@
+{
+  "name": "arvis-awesome-stars",
+  "version": "0.0.2",
+  "description": "Search starred repository through 'awesome-stars'",
+  "license": "MIT",
+  "repository": "jopemachine/arvis-awesome-stars",
+  "author": {
+    "name": "jopemachine",
+    "email": "jopemachine@naver.com",
+    "url": "github.com/jopemachine/arvis-awesome-stars"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "keywords": [
+    "arvis",
+    "workflow",
+    "star",
+    "arvish",
+    "awesome-stars"
+  ],
+  "dependencies": {
+    "arvish": ">=0.9.0",
+    "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "arvish-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}
